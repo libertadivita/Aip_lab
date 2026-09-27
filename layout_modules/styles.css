@@ -31,7 +31,7 @@ a {color: red;
 p i {color:green;}
 
 p b i{color:red;}
-*/
+
 li > b {color:red;}
 
 .eee {color: red;}
@@ -41,3 +41,151 @@ li > b {color:red;}
 .eve {color:green;}
 
 .xxx {font-size: 30px;}
+
+
+.block1 {
+	color: red;
+}
+.block2 {
+	color: green;
+}
+.block3 {
+	color: blue;
+}
+
+
+.block1 {
+	color: red;
+}
+.block2 {
+	color: green;
+}
+
+
+.eee {font-size: 20px;}
+.zzz {font-size: 30px;}
+.ggg {font-size: 35px;}
+
+.eee, .zzz, .ggg {line-height: 1.5;
+                  font-family: Arial;
+                  text-align: center;}
+
+h2.header {font-size: 40px;}
+h3.header {font-size: 30px;}
+
+
+.eee i {color: red;}
+
+
+.success {
+	color: green;
+}
+.error {
+	color: red;
+}
+.large {
+	font-size: 30px;
+}
+.small {
+	font-size: 20px;
+}
+
+
+#elem1 {color: red;}
+#elem2 {color: green;}
+#elem3 {color: blue;}
+
+#block {color: red;}
+.text {font-family: Arial;}
+
+
+#elem p {color: aquamarine;}
+
+#elem .text {color: aquamarine;}
+ 
+#elem p.text {color: aquamarine;}
+
+#elem li.text {color: aquamarine;}
+
+.eee.zzz.ccc {color: aquamarine;}
+
+h2#elem.bbb {color: red;}
+
+#block h1, #block h2 {
+	text-align: center;
+}
+
+#block h1, #block h2, #block h3{
+	text-align: center;
+}
+#block h2 {
+	color: blue;
+}
+#block h3 {
+	font-size: 16px;
+	color: red;
+}
+
+#elem + li {color: red;}
+.elem + li {color: blue;}
+
+#elem ~ li {color: red;}
+
+main * p {color: red;}
+
+[title] {color: red;}
+p[title] {color: red;}
+p[title="hello"] {color: red;}
+a[href^="http://"] {color: red;}
+a[href$=".html"] {color: red;}
+p[title*="hello"] {color: red;}
+[class^="top-"] {color: red;}
+
+a:link {color: blue;}
+a:visited {color: green;}
+a:hover {color: red; text-decoration: none;}
+a:active {color: black;}
+
+a {color: blue; text-decoration: none;}
+a:hover {color: red; text-decoration: underline;}
+
+a.zzz {color: red;}
+a.zzz:hover {text-decoration: none;}
+
+#test a {color: red;}
+#test a:hover {text-decoration: none;}
+
+#block a.zzz {color: red;}
+#block a.zzz:hover {text-decoration: none;}
+
+.block a.zzz {color: red;}
+.block a.zzz:hover {text-decoration: none;}
+
+li:first-child {color: red;}
+li:last-child {color:green;}
+
+
+
+li:nth-child(3) {color: red;}
+
+li:nth-child(odd) {background: red;}
+li:nth-child(even) {background: green;}
+
+li:nth-child(3n) {color: red;}
+
+li:nth-last-child(2) {color: red;}
+
+li:only-child {color: red;}
+
+li:empty {border: 1px solid blue; width: 100px;}
+
+li:first-of-type {color: red;}
+li:last-of-type {color: green;}
+li:nth-of-type(2) {color: blue;}
+li:nth-last-of-type(2) {color: orange;}
+li:only-of-type {color: aquamarine;}
+
+li:not(.elem) {color: red;}
+*/
+li:not(:first-child) {color: red;}
+li:not(:first-child):not(:last-child) {color: green}
