@@ -1,0 +1,17 @@
+﻿div p {color: red;}
+div h2 {color: green;}
+#block1 p {color: blue;}
+#block2 h2 {color: brown;}
+.bbb {color: yellow;}
+#block3 .bbb {color: darkgreen;}
+p.bbb {color: aqua;}
+h2.bbb {color: chartreuse;}
+#block4 p.bbb {color: crimson;}
+.bbb, .xxx {color: darkviolet;}
+p.bbb, h2.xxx {color: coral;}
+#block5 p.bbb, #block5 p.xxx {color: deeppink;}
+.fff {color: gold;}
+.fff p {color: maroon;}
+p.fff {color: mediumspringgreen;}
+.fff .bbb {color: purple;}
+.fff h2.bbb {color: teal;}
