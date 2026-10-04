@@ -1,4 +1,5 @@
 ﻿"use strict"; // строгий режим
+// Module 1
 /*
 
 let num;
@@ -273,7 +274,7 @@ alert(1024*1024*1024);
 alert(1024*1024*1024*10);
 alert(1024**4);
 alert(1024**3);
-*/
+
 
 let r = 2;
 let s = 3.14 * r**2;
@@ -300,3 +301,109 @@ alert(+tf.toFixed(2));
 let tf1 = 78.8;
 let tc1 = (tf1 - 32)/1.8;
 alert(+tc1.toFixed(2));
+
+
+// Module 2
+
+
+let arr = [1,2,3];
+alert(arr);
+console.log(arr)
+
+let arr1 = ["a","b","c"];
+alert(arr1);
+console.log(arr1)
+
+
+let arr = [1,2,3];
+alert(arr[0]); 
+alert(arr[1]); 
+alert(arr[2]);
+alert(arr[0] + arr[1] + arr[2]);
+
+let arr1 = ['a', 'b', 'c', 'd'];
+alert(arr1[0] + "+" + arr1[1] + "+" + arr1[2] + "+" + arr1[3]);
+
+
+let mas = [1,2,3,4,5,6];
+alert(mas.length);
+alert(mas[mas.length - 1]);
+
+
+let mas = ["a","b","c"];
+mas[0] = 1;
+mas[1] = 2;
+mas[2] = 3; 
+alert(mas);
+
+
+let arr = [1,2];
+arr[0] += 3;
+arr[1] += 3;
+alert(arr);
+
+
+let arr = [1,2,3];
+arr[0]++;
+arr[1]++;
+arr[2]++;
+alert(arr);
+
+
+let arr = [];
+arr[0] = 1;
+arr[1] = 2;
+arr[2] = 3;
+alert(arr);
+
+let arr1 = [1, 2, 3];
+arr1[3] = 4;
+arr1[4] = 5;
+alert(arr1)
+
+
+let arr = [];
+arr[3] = 'a';
+arr[8] = 'b';
+alert(arr.length);
+
+
+let arr = [];
+arr.push(1);
+arr.push(2);
+arr.push(3);
+alert(arr);
+
+let arr = [1,2,3];
+arr.push(4);
+arr.push(5);
+alert(arr);
+
+
+let arr = ['a', 'b', 'c'];
+let key = 2;
+alert(arr[key]);
+
+let arr1 = [1, 2, 3, 4, 5];
+let key1 = 1;
+let key2 = 2;
+alert(arr1[key1] + arr1[key2]);
+
+
+let arr = ['a', 'b', 'c', 'd', 'e'];
+delete arr[4];
+delete arr[2];
+alert(arr.length);
+*/
+
+let arr = [1, 2, 3, 4, 5];
+console.log(arr[arr.length - 1]); // -1 
+
+let arr1 = [1, 2, 3, 4, 5];
+console.log(arr1[0] + arr1[1] + arr1[2] + arr1[3] + arr1[4]); // нумерация с 0
+
+let arr2 = [1, 2, 3, 4, 5]; //скобки квадратные
+console.log(arr2.length);
+
+let arr3 = [1, 2, 3, 4, 5];
+console.log(arr3.length); // length 
