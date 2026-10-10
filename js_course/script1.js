@@ -394,7 +394,7 @@ let arr = ['a', 'b', 'c', 'd', 'e'];
 delete arr[4];
 delete arr[2];
 alert(arr.length);
-*/
+
 
 let arr = [1, 2, 3, 4, 5];
 console.log(arr[arr.length - 1]); // -1 
@@ -407,3 +407,593 @@ console.log(arr2.length);
 
 let arr3 = [1, 2, 3, 4, 5];
 console.log(arr3.length); // length 
+
+
+// Модуль 3
+
+
+let test = 10;
+
+if (test >  10) {
+	console.log('+++'); 
+} else {
+	console.log('---');
+}
+
+if (test <  10) {
+	console.log('+++'); 
+} else {
+	console.log('---');
+}
+
+if (test <=  10) {
+	console.log('+++'); 
+} else {
+	console.log('---');
+}
+
+if (test >=  10) {
+	console.log('+++'); 
+} else {
+	console.log('---');
+}
+
+if (test == 10) {
+    console.log('+++');
+} else {
+    console.log('---');
+}
+
+if (test != 10) {
+    console.log('+++');
+} else {
+    console.log('---');
+}
+
+ 
+let test1 = 1;
+let test2 = 2;
+
+if (test2 > test1) {
+	console.log('test2 > test1'); 
+} else {
+	console.log('test2 < test1');
+}
+
+if (test2 == test1) {
+	console.log('test2 == test1'); 
+} else {
+	console.log('test2 != test1');
+}
+
+
+let test1 = "abc";
+let test2 = "cba";
+
+if (test2 == test1) {
+	console.log('test2 == test1'); 
+} else {
+	console.log('test2 != test1');
+}
+
+
+let test1 = '123';
+let test2 = 123;
+
+if (test2 == test1) {
+	console.log('test2 == test1'); 
+} else {
+	console.log('test2 != test1');
+}
+
+
+let num = 3;
+
+if (num > 0 && num < 5) {
+	console.log('+++');
+} else {
+	console.log('---');
+}
+
+if (num >= 10 && num <= 20) {
+	console.log('+++');
+} else {
+	console.log('---');
+}
+
+let num1 = 2;
+let num2 = 3;
+
+if (num1 <= 1 && num2 >= 3) {
+	console.log('+++');
+} else {
+	console.log('---');
+}
+
+
+if (!(num1 >= 0 || num2 <= 10)) {
+	console.log('+++');
+} else {
+	console.log('---');
+}
+
+
+let test = true;
+
+if (test === true) {
+	console.log('+++');
+} else {
+	console.log('---');
+}
+
+if (test === false) {
+	console.log('+++');
+} else {
+	console.log('---');
+}
+
+
+let test = true;
+
+if(test) {
+	console.log('+++');
+} else {
+	console.log('---');
+}
+
+
+let test = true;
+
+if (!test) {
+	console.log('+++');
+} else {
+	console.log('---');
+}
+
+
+let test1 = true;
+let test2 = true;
+
+if (test1 && test2) {
+	console.log('+++');
+} else {
+	console.log('---');
+}
+
+
+let test3 = true;
+let test4 = true;
+
+if (test3 && !test4 ) {
+	console.log('+++');
+} else {
+	console.log('---');
+}
+
+
+let test5 = true;
+let test6 = true;
+
+if (!test5 && !test6) {
+	console.log('+++');
+} else {
+	console.log('---');
+}
+
+
+let test7 = true;
+let test8 = true;
+
+if (!(!test7) && test8) {
+	console.log('+++');
+} else {
+	console.log('---');
+}
+
+
+let test9 = true;
+let test10 = true;
+let test11 = true;
+
+if (test9 && test10 && test11) {
+	console.log('+++');
+} else {
+	console.log('---');
+}
+
+
+let test12 = true;
+let test13 = true;
+let test14 = true;
+
+if (test12 || test13 && test14) {
+	console.log('+++');
+} else {
+	console.log('---');
+}
+
+
+let test15 = true;
+let test16 = true;
+let test17 = true;
+
+if (test15 || !test16 && !test17) {
+	console.log('+++');
+} else {
+	console.log('---');
+}
+
+
+
+let test = 10;
+
+if (test == 10) {
+	console.log('yes');
+}
+
+if (test > 0) 
+	console.log('+++');
+else 
+	console.log('---');
+
+if (test > 0) console.log('+++');
+
+
+let num = 15;
+
+if (num >= 1 && num <= 10) {
+	console.log('1 декада');
+} else if (num >= 11 && num <= 20) {
+	console.log('2 декада');
+} else if (num >= 21 && num <= 31) {
+	console.log('3 декада');
+} else {
+	console.log('неверное значение переменной num');
+}
+
+
+let num = 88;
+let sum = 0;
+
+if (num >= 10 && num <= 99) {
+    sum = Number(String(num)[0]) + Number(String(num)[1]);
+	if (sum <= 9) {
+		console.log('сумма цифр однозначна');
+	} else {
+		console.log('сумма цифр двузначна');
+	}
+} else {
+	console.log('не входит в диапазон');
+}
+
+
+let lang = 'en';
+
+switch (lang) {
+	case 'ru':
+		console.log('rus');
+	break;
+	case 'en':
+		console.log('eng');
+	break;
+	case 'de':
+		console.log('deu');
+	break;
+	default:
+		console.log('language not supported');
+	break;
+}
+
+let num = 1;
+let res = num >= 0 ? "1": "2";
+console.log(res);
+
+
+let a = 2 * (3 - 1);
+let b = 6 - 2;
+console.log(a == b);
+
+let a = 5 * (7 - 4);
+let b = 1 + 2 + 7;
+console.log(a > b);
+
+let a = 2 ** 4;
+let b = 4 ** 2;
+console.log(a != b);
+
+let ok = confirm('Вам есть 18?');
+
+if (ok) {
+	console.log('текст для взрослых');
+} else {
+	console.log('доступ запрещён');
+}
+
+let age = 17;
+let adult; // вне скобок
+if (age >= 18) {
+	adult = true;
+} else {
+	adult = false;
+}
+
+console.log(adult);
+
+
+let age = 17;
+let adult;
+
+if (age >= 18) {
+	adult = true; // убрали let
+} else {
+	adult = false; // убрали let
+}
+
+console.log(adult);
+
+
+let age = 17;
+let adult;
+
+if (age >= 18) {
+	adult = true;
+} else {
+	adult = false; // убрали let
+}
+
+console.log(adult)
+
+
+let age = 17;
+let res;
+
+if (age >= 18) {
+	if (age <= 23) {
+		res = 'от 18 до 23'; // убрали let
+	} else {
+		res = 'больше 23'; // убрали let
+	}
+} else {
+	res = 'меньше 18'; // убрали let
+}
+
+console.log(res);
+
+
+let age = 19;
+let res;
+
+if (age >= 18) {
+	// убрали let res
+	
+	if (age <= 23) {
+		res = 'от 18 до 23';
+	} else {
+		res = 'больше 23';
+	}
+} else {
+	res = 'меньше 18';
+}
+
+console.log(res);
+
+
+let min = 10;
+
+if (min >= 0 && min <= 19) {
+	console.log('1 треть');
+}
+
+if (min >= 20 && min <= 39) {
+	console.log('2 треть');
+}
+
+if (min >= 40 && min <= 59) {
+	console.log('3 треть');
+}
+
+
+let arr = '123';
+
+if (arr.length == 3) {
+	console.log(Number(arr[0]) + Number(arr[1]) + Number(arr[2]));
+}
+
+let str = 'a234x';
+
+if (str[0] == "a") {
+	console.log('!');
+}
+
+if (str[str.length - 1] == "x") {
+	console.log('!');
+}
+
+if (str[0] == "a" || str[0] == "b") {
+	console.log('!');
+}
+
+
+let num = 123450;
+let strnum = String(num);
+if (strnum[strnum.length - 1] == 0) {
+	console.log('верно');
+} else {
+	console.log('неверно');
+}
+
+
+let num = 123451;
+let strnum = String(num);
+if (strnum[strnum.length - 1] == 0 || strnum[strnum.length - 1] == 2 || strnum[strnum.length - 1] == 4 || strnum[strnum.length - 1] == 6 || strnum[strnum.length - 1] == 8) {
+	console.log('верно');
+} else {
+	console.log('неверно');
+}
+
+
+let a = 11;
+let rest = a % 2;
+
+if (rest === 0) {
+	console.log('чётное');
+} else {
+	console.log('нечётное');
+}
+
+
+let a = 12;
+let rest = a % 3;
+
+if (rest === 0) {
+	console.log('делится на 3');
+} else {
+	console.log('не делится на 3');
+}
+
+
+let num1 = 1;
+let num2 = 2;
+
+if (num1 + num2 === 3) {
+	console.log('+++');
+} else {
+	console.log('---');
+}
+
+let num1 = Number('1');
+let num2 = Number('2');
+
+if (num1 + num2 === 3) {
+	console.log('+++');
+} else {
+	console.log('---');
+}
+
+let num1 = '1';
+let num2 = '2';
+
+if (Number(num1) + Number(num2) === 3) { //каждая переменная число
+	console.log('+++');
+} else {
+	console.log('---');
+}
+
+let num = 123;
+
+if (String(num)[0] == 1) { // string и ==
+	console.log('+++');
+} else {
+    console.log('---');
+}
+
+let num = 123;
+
+if (String(num)[0] == 1) { // индекс вне string и ==
+	console.log('+++');
+} else {
+	console.log('---');
+}
+
+let num = 123;
+
+if (String(num)[0] == 1) { // ==
+	console.log('+++');
+} else {
+	console.log('---');
+}
+
+let num = 123;
+let first = String(num)[0];
+
+if (first == 1) { // ==
+	console.log('+++');
+} else {
+	console.log('---');
+}
+
+let num = 12;
+
+if (String(num).length === 2) { // string
+	console.log('+++');
+} else {
+	console.log('---');
+}
+
+let num = 12;
+let str = String(num); // string вместо number и num вместо str
+
+if (str.length === 2) {
+	console.log('+++');
+} else {
+	console.log('---');
+}
+
+let num = 12;
+
+if (String(num).length === 2) { // без метода в скобках 
+	console.log('+++');
+} else {
+	console.log('---');
+}
+
+let num = 12;
+
+if (String(num).length === 2) { // убрали string(2)
+	console.log('+++');
+} else {
+	console.log('---');
+}
+
+let num = 12;
+
+if (String(num).length === 2) { //length
+	console.log('+++');
+} else {
+	console.log('---');
+}
+
+let num = '123033'; // берем в кавычки, чтобы обращаться к цифрам
+
+let sum1 = Number(num[0]) + Number(num[1]) + Number(num[2]); // number
+let sum2 = Number(num[3]) + Number(num[4]) + Number(num[5]); // number
+
+if (sum1 == sum2) {
+	console.log('суммы равны');
+} else {
+	console.log('суммы не равны');
+}
+*/
+let month = 7;
+if (month <= 2 || month == 12) console.log("зима");
+if (month <= 5 && month > 2) console.log("весна");
+if (month <= 8 && month > 5) console.log("лето");
+if (month <= 11 && month > 8) console.log("осень");
+
+let str = "abcde";
+if (str[0] == "a") { 
+	console.log('+++');
+} else {
+    console.log('---');
+}
+
+let num = 12345;
+if (String(num)[0] == "1" || String(num)[0] == "2" || String(num)[0] == "3") { 
+	console.log('+++');
+} else {
+    console.log('---');
+}
+
+let num1 = 123;
+console.log(Number(String(num1)[0]) + Number(String(num1)[1]) + Number(String(num1)[2]));
+
+let num2= '234432'; 
+
+let sum1 = Number(num2[0]) + Number(num2[1]) + Number(num2[2]); 
+let sum2 = Number(num2[3]) + Number(num2[4]) + Number(num2[5]); 
+
+if (sum1 == sum2) {
+	console.log('суммы равны');
+} else {
+	console.log('суммы не равны');
+}
