@@ -394,7 +394,7 @@ let arr = ['a', 'b', 'c', 'd', 'e'];
 delete arr[4];
 delete arr[2];
 alert(arr.length);
-*/
+
 
 let arr = [1, 2, 3, 4, 5];
 console.log(arr[arr.length - 1]); // -1 
@@ -407,3 +407,125 @@ console.log(arr2.length);
 
 let arr3 = [1, 2, 3, 4, 5];
 console.log(arr3.length); // length 
+
+
+// Модуль 3
+
+let obj = {1: 'понедельник', 2: 'вторник', 3: 'среда', 4: 'четверг', 5: 'пятница', 6: 'суббота', 7: 'воскресенье'};
+console.log(obj);
+
+let obj1 = { 1: 'январь', 2: 'февраль', 3: 'март', 4: 'апрель', 5: 'май', 
+	6: 'июнь',7: 'июль',8: 'август',9: 'сентябрь',10: 'октябрь',11: 'ноябрь',12: 'декабрь'};
+console.log(obj1);
+
+let obj2 = {'name': "Иван", 'surname': "Иванов", 'patronymic': "Иванович"};
+console.log(obj2["name"], obj2["surname"], obj2["patronymic"]);
+
+let date = {year: 2026, month: 10, day: 18};
+console.log(date.year + '-' + date.month + '-' + date.day);
+
+let obj = {
+	'1a': 1,
+	'b2': 2,
+	'c-c': 3,
+	'd 4': 4,
+	'e5': 5
+};
+
+console.log(obj['1a']); 
+console.log(obj['b2']);  
+console.log(obj['c-c']); 
+console.log(obj['d 4']); 
+console.log(obj['e5']);  
+
+
+let obj = {x: 1, y: 2, z: 3};
+obj.x = obj.x ** 2;
+obj.y = obj.y ** 2;
+obj.z = obj.z ** 2;
+console.log(obj);
+
+
+let obj = {};
+obj.a = 1;
+obj.b = 2;
+console.log(obj);
+
+
+let obj = {3: 'c', 1: 'a', 2: 'b'};
+
+console.log(obj[1]); 
+console.log(obj[2]); 
+console.log(obj[3]); 
+
+
+let obj = {x: 1, y: 2, z: 3};
+let keys = Object.keys(obj);
+console.log(keys);
+console.log(keys.length);
+
+
+let obj = {x: 1, y: 2, z: 3};
+let key = 'y';
+console.log(obj[key]);
+
+
+let obj = {x: 1, y: 2, z: 3};
+console.log(obj["x"]); // кавычки
+
+
+let obj = {x: 1, y: 2, z: 3};
+let key = 'x';
+console.log(obj[key]); // без кавычек
+
+
+let obj = {x: 1, y: 2, z: 3};
+
+let prop = 'x';
+console.log(obj[prop]);// квдр скобки без точки
+
+
+let obj = {x: 1, y: 2, z: 3};
+
+let prop = 'x';
+console.log(obj[prop]);// без кавычек
+
+
+let key = 'x';
+
+let obj = {
+	[key]: 1, // переменная в квдр скобках
+	y: 2,
+	z: 3
+};
+
+let key1 = 'x';
+let key2 = 'y';
+let key3 = 'z';
+let obj = {
+	[key1]: 1,
+	[key2]: 2,
+	[key3]: 3
+};
+
+
+const arr = [1, 2, 3, 4, 5];
+const res = arr[1] + arr[2];
+
+console.log(res);
+*/
+
+let obj = {x: 1, y: 2, z: 3};
+console.log(obj['x']); //кавычки
+
+let obj1 = {x: 1, y: 2, z: 3};
+let key1 = 'x';
+console.log(obj1[key1]); //квдр скобки без точки
+
+let obj3 = {x: 1, y: 2, z: 3};
+let sum3 = obj3.x + obj3.y + obj3.x; // точка
+console.log(sum3); // sum
+
+let obj4 = {x: 1, y: 2, z: 3};
+let keys4;
+console.log(Object.keys4(obj4).length);
