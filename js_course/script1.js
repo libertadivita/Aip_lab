@@ -1874,7 +1874,7 @@ for (let elem of arr15) {
 }
 
 console.log(res15);
-*/
+
 
 // №1
 for (let i = 1; i <= 100; i++) {
@@ -2171,3 +2171,799 @@ for (let i = 0; i < arr28.length; i++) {
 }
 
 console.log(obj28);
+
+
+
+// Модуль 6
+
+
+let arr = [
+	['a', 'b', 'c'],
+	['d', 'e', 'f'],
+	['g', 'h', 'i'],
+	['j', 'k', 'l'],
+];
+console.log(arr[3][2] + arr[1][1]+arr[2][0]+arr[0][0]);
+
+let arr1 = [[1, 2], [3, 4], [5, 6]];
+console.log(arr1[0][0] + arr1[0][1] + arr1[1][0] + arr1[1][1] + arr1[2][0] + arr1[2][1]);
+
+
+let arr = [
+	[
+		[1, 2],
+		[3, 4],
+	],
+	[
+		[5, 6],
+		[7, 8],
+	],
+];
+console.log(arr[0][0][0] + arr[0][0][1] + arr[0][1][0] + arr[0][1][1] + arr[1][0][0] + arr[1][0][1] + arr[1][1][0] + arr[1][1][1]);
+
+
+let arr = [[1, 2, 3, [4, 5, [6, 7]]], [8, [9, 10]]];
+
+let sum =
+	arr[0][0] + arr[0][1] + arr[0][2] + arr[0][3][0] + arr[0][3][1] +
+	arr[0][3][2][0] + arr[0][3][2][1] +
+	arr[1][0] + arr[1][1][0] + arr[1][1][1];
+console.log(sum);
+
+
+let arr = [[1, 2, 3], [4, 5], [6]];
+let sum = 0;
+
+for (let subArr of arr) 
+{
+	for (let elem of subArr) 
+	{
+		sum += elem;
+	}
+}
+console.log(sum);
+
+
+let arr = [[[1, 2], [3, 4]], [[5, 6], [7, 8]]];
+let sum = 0;
+for (let subArr of arr)
+{
+	for(let subsubArr of subArr)
+	{
+		for(let elem of subsubArr)
+		{
+			sum += elem;
+		}
+	}
+}
+console.log(sum);
+
+
+let arr = [[1, 2, 3], [4, 5], [6]];
+let sum = 0;
+
+for (let i = 0; i < arr.length; i++) {
+	for (let j = 0; j < arr[i].length; j++) {
+		sum += arr[i][j];
+	}
+}
+
+console.log(sum);
+
+
+let arr = [];
+for (let i = 0; i < 3; i++) 
+{
+	let subArr = [];
+	for (let j = 1; j <= 5; j++) 
+	{
+		subArr.push(j);
+	}
+	arr.push(subArr);
+}
+console.log(arr);
+
+
+let arr = [];
+for (let i = 0; i < 3; i++) 
+{
+	let subArr = [];
+	for (let j = 0; j < 4; j++)
+	{
+		subArr.push('x');
+	}
+	arr.push(subArr);
+}
+console.log(arr);
+
+
+let arr = [];
+for (let i = 0; i < 3; i++) 
+{
+	let subArr1 = [];
+	for (let j = 0; j < 2; j++) 
+	{
+		let subArr2 = [];
+		for (let k = 1; k <= 5; k++) 
+		{
+			subArr2.push(k);
+		}
+		subArr1.push(subArr2);
+	}
+	arr.push(subArr1);
+}
+console.log(arr);
+
+
+let arr = [];
+for (let i = 0; i < 3; i++) 
+{
+	arr[i] = [];
+	for (let j = 1; j <= 5; j++) 
+	{
+		arr[i].push(j);
+	}
+}
+console.log(arr);
+
+let arr = [];
+for (let i = 0; i < 3; i++) 
+{
+	arr[i] = []; // arr[i] = '';
+	for (let j = 1; j <= 5; j++) 
+	{
+		arr[i].push(j);
+	}
+}
+console.log(arr);
+
+
+let arr = [];
+for (let i = 0; i < 3; i++) 
+{
+	arr[i] = []; // вложенный массив
+	for (let j = 1; j <= 5; j++) 
+	{
+		arr[i].push(j);
+	}
+}
+console.log(arr);
+
+
+let arr = [];
+for (let i = 0; i < 3; i++) 
+{
+	arr[i] = []; // arr[j] = [];
+	for (let j = 1; j <= 5; j++) 
+	{
+		arr[i].push(j);
+	}
+}
+console.log(arr);
+
+
+let arr = [];
+for (let i = 0; i < 3; i++)
+{
+	arr[i] = []; // arr = []
+	for (let j = 1; j <= 5; j++)
+	{
+		arr[i].push(j);
+	}
+}
+console.log(arr);
+
+
+let arr = [];
+for (let i = 0; i < 3; i++)
+{
+	arr[i] = [];
+	for (let j = 1; j <= 5; j++)
+	{
+		arr[i].push(j); // arr.push(j);
+	}
+}
+console.log(arr);
+
+
+let arr = [];
+let k = 1;
+for (let i = 0; i < 4; i++)
+{
+	arr[i] = [];
+	for (let j = 0; j < 2; j++)
+	{
+		arr[i][j] = k;
+		k++;
+	}
+}
+console.log(arr);
+
+
+let arr = [];
+let k = 2;
+for (let i = 0; i < 4; i++)
+{
+	arr[i] = [];
+	for (let j = 0; j < 3; j++)
+	{
+		arr[i][j] = k;
+		k += 2;
+	}
+}
+console.log(arr);
+
+
+let arr = [];
+let k = 1;
+for (let i = 0; i < 2; i++)
+{
+	arr[i] = [];
+	for (let j = 0; j < 2; j++)
+	{
+		arr[i][j] = [];
+		for (let l = 0; l < 2; l++)
+		{
+			arr[i][j][l] = k;
+			k++;
+		}
+	}
+}
+console.log(arr);
+
+
+let arr = [];
+let k = 1;
+for (let i = 0; i < 3; i++)
+{
+	arr[i] = [];
+	for (let j = 0; j < 3; j++)
+	{
+		arr[i][j] = k;
+		k++;
+	}
+}
+console.log(arr);
+
+
+let arr = [];
+let k = 1;
+for (let i = 0; i < 3; i++)
+{
+	arr[i] = [];
+	for (let j = 0; j < 3; j++)
+	{
+		arr[i][j] = k;
+		k++;
+	}
+}
+console.log(arr);
+
+
+let arr = [];
+let k = 1;
+for (let i = 0; i < 3; i++)
+{
+	arr[i] = [];
+	for (let j = 0; j < 3; j++)
+	{
+		arr[i][j] = k;
+		k++;
+	}
+}
+console.log(arr);
+
+
+let arr = [];
+let k = 1;
+for (let i = 0; i < 3; i++)
+{
+	arr[i] = [];
+	for (let j = 0; j < 3; j++)
+	{
+		arr[i][j] = k;
+		k++;
+	}
+}
+console.log(arr);
+
+
+let arr = [];
+for (let i = 0, k = 1; i < 3; i++)
+{
+	arr[i] = [];
+	for (let j = 0; j < 3; j++)
+	{
+		arr[i][j] = k;
+		k++;
+	}
+}
+console.log(arr);
+
+
+let arr = [];
+for (let i = 0, k = 1; i < 3; i++)
+{
+	arr[i] = [];
+	for (let j = 0; j < 3; j++)
+	{
+		arr[i][j] = k;
+		k++;
+	}
+}
+console.log(arr);
+
+
+let arr = [];
+for (let i = 0, k = 1; i < 3; i++)
+{
+	arr[i] = [];
+	for (let j = 0; j < 3; j++)
+	{
+		arr[i][j] = k;
+		k++;
+	}
+}
+console.log(arr);
+
+
+let arr = [];
+for (let i = 0, k = 1; i < 3; i++)
+{
+	arr[i] = [];
+	for (let j = 0; j < 3; j++)
+	{
+		arr[i][j] = k;
+		k++;
+	}
+}
+console.log(arr);
+
+
+let arr = [];
+let k = 1;
+for (let i = 0; i < 3; i++)
+{
+	arr[i] = [];
+	for (let j = 0; j < 3; j++)
+	{
+		arr[i][j] = k;
+		k++;
+	}
+}
+console.log(arr);
+
+
+let arr = [];
+for (let i = 0, k = 1; i < 3; i++)
+{
+	arr[i] = [];
+	for (let j = 0; j < 3; j++)
+	{
+		arr[i][j] = k;
+		k++;
+	}
+}
+console.log(arr);
+
+
+let obj = {
+	key1: {
+		key1: 1,
+		key2: 2,
+		key3: 3,
+	},
+	key2: {
+		key1: 4,
+		key2: 5,
+		key3: 6,
+	},
+	key3: {
+		key1: 7,
+		key2: 8,
+		key3: 9,
+	},
+};
+let sum = 0;
+for (let key1 in obj)
+{
+	for (let key2 in obj[key1])
+	{
+		sum += obj[key1][key2];
+	}
+}
+console.log(sum); 
+
+
+let obj = {
+	1: {
+		1: 'a1',
+		2: 'a2',
+		3: 'a3',
+	},
+	2: {
+		1: 'b1',
+		2: 'b2',
+		3: 'b3',
+	},
+	3: {
+		1: 'c1',
+		2: 'c2',
+		3: 'c3',
+	},
+};
+console.log(obj[2][2]); 
+console.log(obj[3][1]); 
+
+
+let obj = {
+	key1: {
+		a: 1, b: 2, c: {
+			d: 3,
+			e: 4,
+		}, f: 5,
+	},
+	key2: {
+		g: 6, h: 7,
+	},
+};
+let sum = obj.key1.a + obj.key1.b + obj.key1.c.d + obj.key1.c.e + obj.key1.f + obj.key2.g + obj.key2.h;
+console.log(sum); 
+
+
+let obj1 = {
+	1: {
+		1: 11,
+		2: 12,
+		3: 13,
+	},
+	2: {
+		1: 21,
+		2: 22,
+		3: 23,
+	},
+	3: {
+		1: 24,
+		2: 25,
+		3: 26,
+	},
+};
+let sum1 = 0;
+for (let key1 in obj1)
+{
+	for (let key2 in obj1[key1])
+	{
+		sum1 += obj1[key1][key2];
+	}
+}
+console.log(sum1);
+
+
+let obj2 = {
+	1: {
+		1: {
+			1: 111,
+			2: 112,
+			3: 113,
+		},
+		2: {
+			1: 121,
+			2: 122,
+			3: 123,
+		},
+	},
+	2: {
+		1: {
+			1: 211,
+			2: 212,
+			3: 213,
+		},
+		2: {
+			1: 221,
+			2: 222,
+			3: 223,
+		},
+	},
+	3: {
+		1: {
+			1: 311,
+			2: 312,
+			3: 313,
+		},
+		2: {
+			1: 321,
+			2: 322,
+			3: 323,
+		},
+	},
+};
+let sum2 = 0;
+for (let key1 in obj2)
+{
+	for (let key2 in obj2[key1])
+	{
+		for (let key3 in obj2[key1][key2])
+		{
+			sum2 += obj2[key1][key2][key3];
+		}
+	}
+}
+console.log(sum2); 
+
+
+let students = {
+	'group1': ['name11', 'name12', 'name13'],
+	'group2': ['name21', 'name22', 'name23'],
+	'group3': ['name31', 'name32', 'name33'],
+};
+console.log(students['group3'][0]);
+
+
+let data1 = {
+	1: ['data11', 'data12', 'data13'],
+	2: ['data21', 'data22', 'data23'],
+	3: ['data31', 'data32', 'data33'],
+	4: ['data41', 'data42', 'data43'],
+};
+for (let key in data1)
+{
+	for (let elem of data1[key])
+	{
+		console.log(elem);
+	}
+}
+
+
+let data2 = [
+	{1: 'data11', 2: 'data12', 3: 'data13'},
+	{1: 'data21', 2: 'data22', 3: 'data23'},
+	{1: 'data31', 2: 'data32', 3: 'data33'},
+];
+for (let obj of data2)
+{
+	for (let key in obj)
+	{
+		console.log(obj[key]);
+	}
+}
+
+
+let data3 = [
+	{
+		1: ['data111', 'data112', 'data113'],
+		2: ['data121', 'data122', 'data123'],
+	},
+	{
+		1: ['data211', 'data212', 'data213'],
+		2: ['data221', 'data222', 'data223'],
+	},
+	{
+		1: ['data411', 'data412', 'data413'],
+		2: ['data421', 'data422', 'data423'],
+	},
+];
+for (let obj of data3)
+{
+	for (let key in obj)
+	{
+		for (let elem of obj[key])
+		{
+			console.log(elem);
+		}
+	}
+}
+
+
+let employees1 = [
+	{
+		name: 'name1',
+		salary: 300,
+	},
+	{
+		name: 'name2',
+		salary: 400,
+	},
+	{
+		name: 'name3',
+		salary: 500,
+	},
+];
+for (let emp1 of employees1)
+{
+	console.log(emp1.name + ' - ' + emp1.salary);
+}
+
+
+let employees2 = [
+	{
+		name: 'name1',
+		salary: 300,
+	},
+	{
+		name: 'name2',
+		salary: 400,
+	},
+	{
+		name: 'name3',
+		salary: 500,
+	},
+];
+let sum2 = 0;
+for (let emp2 of employees2)
+{
+	sum2 += emp2.salary;
+}
+console.log(sum2);
+
+
+let employees3 = [
+	{
+		name: 'name1',
+		salary: 300,
+		age: 28,
+	},
+	{
+		name: 'name2',
+		salary: 400,
+		age: 29,
+	},
+	{
+		name: 'name3',
+		salary: 500,
+		age: 30,
+	},
+	{
+		name: 'name4',
+		salary: 600,
+		age: 31,
+	},
+	{
+		name: 'name5',
+		salary: 700,
+		age: 32,
+	},
+];
+let sum3 = 0;
+for (let emp3 of employees3)
+{
+	if (emp3.age >= 30)
+	{
+		sum3 += emp3.salary;
+	}
+}
+console.log(sum3);
+
+
+let affairs1 = {
+	'2018': {
+		11: {
+			29: ['name111', 'name112', 'name113'],
+			30: ['name121', 'name122', 'name123'],
+		},
+		12: {
+			30: ['name211', 'name212', 'name213'],
+			31: ['name221', 'name222', 'name223'],
+		},
+	},
+	'2019': {
+		12: {
+			29: ['name311', 'name312', 'name313'],
+			30: ['name321', 'name322', 'name323'],
+			31: ['name331', 'name332', 'name333'],
+		}
+	},
+};
+let year1 = '2018';
+let month1 = 11;
+let day1 = 29;
+console.log(affairs1[year1][month1][day1]);
+
+
+let obj2 = {
+	key1: {
+		key2: '12',
+		key3: '13',
+	},
+	key2: {
+		key4: '24',
+		key5: '25',
+	},
+};
+let key1_2 = 'key2';
+let key2_2 = 'key4';
+console.log(obj2[key1_2][key2_2]); 
+
+
+let obj3 = {
+	key1: {
+		key2: '12',
+		key3: '13',
+	},
+	key2: {
+		key4: '24',
+		key5: '25',
+	},
+};
+let key1_3 = 'key2';
+let key2_3 = 'key4';
+console.log(obj3[key1_3][key2_3]); 
+
+
+let obj4 = {
+	key1: {
+		key2: '12',
+		key3: '13',
+	},
+	key2: {
+		key4: '24',
+		key5: '25',
+	},
+};
+let key1_4 = 'key2';
+let key2_4 = 'key4';
+console.log(obj4[key1_4][key2_4]); 
+
+
+let obj5 = {
+	key1: {
+		key2: '12',
+		key3: '13',
+	},
+	key2: {
+		key4: '24',
+		key5: '25',
+	},
+};
+let key1_5 = 'key2';
+let key2_5 = 'key4';
+console.log(obj5[key1_5][key2_5]);
+
+
+let employees = [
+	{
+		name: 'name1',
+		salary: 300,
+		age: 28,
+	},
+	{
+		name: 'name2',
+		salary: 400,
+		age: 29,
+	},
+	{
+		name: 'name3',
+		salary: 500,
+		age: 30,
+	},
+];
+employees.push({
+	name: 'name4',
+	salary: 600,
+	age: 31,
+});
+console.log(employees);
+*/
+
+let affairs = {'2019-12-28': ['data11', 'data12', 'data13'], 
+				'2019-12-29': ['data21', 'data22', 'data23'], 
+				'2019-12-30': ['data31', 'data32', 'data33']};
+
+affairs['2019-12-29'].push('data24');
+affairs['2019-12-31'] = [];
+affairs['2019-12-31'].push('data41');
+affairs['2019-12-31'].push('data42');
+console.log(affairs);
+
+
+let students = {'group1': {'subgroup11': ['student111', 'student112', 'student113'], 
+							'subgroup12': ['student121', 'student122', 'student123']}, 
+				'group2': {'subgroup21': ['student211', 'student212', 'student213'], 
+							'subgroup22': ['student221', 'student222', 'student223']}, 
+				'group3': {'subgroup31': ['student311', 'student312', 'student313'], 
+							'subgroup32': ['student321', 'student322', 'student323']}};
+
+students['group1']['subgroup11'].push('student114');
+students['group1']['subgroup13'] = [];
+students['group4'] = {};
+students['group4']['subgroup41'] = ['student411', 'student412'];
+console.log(students);
