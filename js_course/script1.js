@@ -2942,7 +2942,7 @@ employees.push({
 	age: 31,
 });
 console.log(employees);
-*/
+
 
 let affairs = {'2019-12-28': ['data11', 'data12', 'data13'], 
 				'2019-12-29': ['data21', 'data22', 'data23'], 
@@ -2967,3 +2967,196 @@ students['group1']['subgroup13'] = [];
 students['group4'] = {};
 students['group4']['subgroup41'] = ['student411', 'student412'];
 console.log(students);
+
+
+
+
+// Модуль 7
+
+
+let res1 = 2 ** 10;
+console.log(res1); 
+
+
+let res2 = Math.sqrt(245);
+console.log(res2);
+
+
+let arr3 = [4, 2, 5, 19, 13, 0, 10];
+let sum3 = 0;
+for (let elem of arr3)
+{
+	sum3 += Math.pow(elem,3);
+}
+let res3 = Math.sqrt(sum3);
+console.log(res3);
+
+
+let n1 = Math.sqrt(379);
+console.log(Math.round(n1));
+console.log(n1.toFixed(1)); 
+console.log(n1.toFixed(2));
+
+let n2 = Math.sqrt(587);
+let obj2 = {floor: Math.floor(n2), ceil: Math.ceil(n2)};
+console.log(obj2); 
+
+let arr1 = [4, -2, 5, 19, -130, 0, 10];
+let max1 = Math.max(...arr1);  // spread: ...arr1
+let min1 = Math.min(...arr1);
+console.log(max1); 
+console.log(min1);
+
+console.log(Math.floor(Math.random() * 100) + 1);
+
+let arr2 = [];
+for (let i = 0; i < 10; i++)
+{
+	arr2.push(Math.floor(Math.random() * 100) + 1);
+}
+console.log(arr2);
+
+let a = 10;
+let b = 25;
+let res = Math.abs(a - b);
+console.log(res); 
+
+let str1 = 'js';
+console.log(str1.toUpperCase());
+
+let str2 = 'JS';
+console.log(str2.toLowerCase());
+
+let str = 'i study javascript';
+
+console.log(str.substr(2, 5));  
+console.log(str.substr(8, 10)); 
+
+console.log(str.substring(2, 7)); 
+console.log(str.substring(8, 18)); 
+
+console.log(str.slice(2, 7));  
+console.log(str.slice(8, 18)); 
+
+
+let str3 = 'http://code.mu';
+console.log(str3.startsWith('http://')); 
+
+let str4 = 'index.html';
+console.log(str4.endsWith('.html'));
+
+let str5 = '1-2-3-4-5';
+
+while (str5.includes('-'))
+{
+	str5 = str5.replace('-', '.');
+}
+console.log(str5);
+
+
+let str1 = '1-2-3-4-5';
+let arr1 = str1.split('-');
+console.log(arr1); 
+
+let str2 = '12345';
+let arr2 = str2.split('');
+console.log(arr2);
+
+let arr3 = [1, 2, 3, 4, 5];
+let str3 = arr3.join('-');
+console.log(str3);
+
+
+let arr1 = [1, 2, 3];
+console.log(arr1.shift());
+
+let arr2 = [1, 2, 3];
+console.log(arr2.pop());
+
+let arr3 = [1, 2, 3];
+arr3.push(4, 5, 6);
+console.log(arr3);
+
+let arr4 = [1, 2, 3];
+arr4.unshift(4, 5, 6);
+console.log(arr4);
+
+
+let arr1 = [1, 2, 3, 4, 5];
+arr1 = arr1.slice(0, 3);
+console.log(arr1);
+
+let arr2 = [1, 2, 3, 4, 5];
+let res2 = arr2.slice(3);
+console.log(res2); 
+
+
+let arr1 = [1, 2, 3, 4, 5];
+arr1.splice(1, 2);
+console.log(arr1);
+
+let arr2 = [1, 2, 3, 4, 5];
+arr2.splice(3, 0, 'a', 'b', 'c');
+console.log(arr2);
+
+let arr3 = [1, 2, 3, 4, 5];
+arr3.splice(1, 0, 'a', 'b');
+arr3.splice(6, 0, 'c');
+arr3.splice(arr3.length, 0, 'e');
+console.log(arr3);
+
+
+let arr = [1, 2, 3, 4, 5];
+console.log(arr.includes(3));
+
+let obj = {a: 1, b: 2, c: 3};
+let keys = Object.keys(obj);
+console.log(keys);
+*/
+
+let num1 = 12345;
+let arr1 = String(num1).split(''); // string 
+let sum1 = 0;
+for (let digit of arr1)
+{
+	sum1 += Number(digit); // number
+}
+console.log(sum1);
+
+let num2 = 12345;
+let arr2 = String(num2).split('');
+let sum2 = 0;
+for (let digit of arr2)
+{
+	sum2 += Number(digit); // number
+}
+console.log(sum2);
+
+let num3 = 12345;
+let arr3 = String(num3).split('');
+let sum3 = 0;
+for (let digit of arr3)
+{
+	sum3 += Number(digit); // +=
+}
+console.log(sum3);
+
+
+let num4 = 12345;
+let arr4 = String(num4).split('');
+let sum4 = 0; // sum number
+for (let digit of arr4)
+{
+	sum4 += Number(digit);
+}
+console.log(sum4);
+
+
+let num5 = 12345;
+let arr5 = String(num5).split('');
+let prod5 = 1; // 1
+for (let digit of arr5)
+{
+	prod5 *= Number(digit); // number
+}
+console.log(prod5);
