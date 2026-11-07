@@ -3112,7 +3112,7 @@ console.log(arr.includes(3));
 let obj = {a: 1, b: 2, c: 3};
 let keys = Object.keys(obj);
 console.log(keys);
-*/
+
 
 let num1 = 12345;
 let arr1 = String(num1).split(''); // string 
@@ -3160,3 +3160,483 @@ for (let digit of arr5)
 	prod5 *= Number(digit); // number
 }
 console.log(prod5);
+
+
+//Модуль 8 
+
+function name()
+{
+	console.log('Руслан');
+}
+name();
+
+function sum()
+{
+	let sum = 0;
+	for (let i = 1; i <= 100; i++)
+	{
+		sum += i;
+	}
+	console.log(sum);
+}
+sum();
+
+
+function cube(num)
+{
+	console.log(num ** 3);
+}
+cube(2);
+
+function sign(num)
+{
+	if (num > 0)
+	{
+		console.log('+++');
+	}
+	else
+	{
+		console.log('---');
+	}
+}
+sign(5);
+sign(-3);
+
+
+function sum(num1, num2, num3)
+{
+	console.log(num1 + num2 + num3);
+}
+sum(1, 2, 3);
+
+
+function sum3(num1, num2, num3)
+{
+	console.log(num1 + num2 + num3);
+}
+let num1 = 1;
+let num2 = 2;
+let num3 = 3;
+sum3(num1, num2, num3);
+
+
+function cube(num)
+{
+	return num ** 3;
+}
+let res = cube(3);
+console.log(res);
+
+function sqrt(num)
+{
+	return Math.sqrt(num);
+}
+let sum = sqrt(3) + sqrt(4);
+console.log(sum);
+
+
+function sqrt(num)
+{
+	return Math.sqrt(num);
+}
+function round(num)
+{
+	return num.toFixed(3);
+}
+let res1 = round(sqrt(2));
+console.log(res1);
+
+
+function sqrt(num)
+{
+	return Math.sqrt(num);
+}
+function sum(num1, num2, num3)
+{
+	return num1 + num2 + num3;
+}
+let res2 = sum(sqrt(2), sqrt(3), sqrt(4));
+console.log(res2);
+
+
+function sqrt(num)
+{
+	return Math.sqrt(num);
+}
+function sum(num1, num2, num3)
+{
+	return num1 + num2 + num3;
+}
+function round(num)
+{
+	return num.toFixed(3);
+}
+let res3 = round(sum(sqrt(2), sqrt(3), sqrt(4)));
+console.log(res3);
+
+
+function func(num)
+{
+	let sum = 0;
+	for (let i = 1; i <= num; i++)
+	{
+		sum += i;
+	}
+	return sum; // return за цикл
+}
+console.log(func(5));
+
+function func(num)
+{
+	let count = 0;
+	while (num >= 10)
+	{
+		num = num / 2;
+		count++;
+	}
+	return count;
+}
+console.log(func(100));
+
+
+function func(num1, num2)
+{
+	if (num1 > 0 && num2 > 0)
+	{
+		return num1 * num2;
+	}
+	else
+	{
+		return num1 - num2;
+	}
+}
+console.log(func(3, 4));
+
+
+function isEven(arr)
+{
+	for (let elem of arr)
+	{
+		if (elem % 2 !== 0)
+		{
+			return false;
+		}
+	}
+	return true;
+}
+console.log(isEven([2, 4, 6, 8]));
+
+function allOdd(num)
+{
+	let str = String(num);
+	for (let digit of str)
+	{
+		if (digit % 2 === 0)
+		{
+			return false;
+		}
+	}
+	return true;
+}
+console.log(allOdd(13579));
+
+function hasPair(arr)
+{
+	for (let i = 1; i < arr.length; i++)
+	{
+		if (arr[i] === arr[i - 1])
+		{
+			return true;
+		}
+	}
+	return false;
+}
+console.log(hasPair([1, 2, 3, 3, 4]));
+
+
+function func(a, b)
+{
+	return a == b;
+}
+
+function func(a, b)
+{
+	return a != b;
+}
+
+function func(a, b)
+{
+	return a + b >= 10;
+}
+
+function func(num)
+{
+	return num >= 0;
+}
+
+
+function getAverage(arr) //переименование 
+{
+	let sum = 0;
+	for (let elem of arr)
+	{
+		sum += elem;
+	}
+	return sum / arr.length;
+}
+
+function getSum(arr) // переименование 
+{
+	let sum = 0;
+	for (let elem of arr)
+	{
+		sum += elem;
+	}
+	return sum;
+}
+function calcRatio(arr1, arr2) // вынесение новой функции 
+{
+	return getSum(arr1) / getSum(arr2);
+}
+
+function getProduct(arr) // переименование
+{
+	let res = 1;
+	for (let elem of arr)
+	{
+		res *= elem;
+	}
+	return res;
+}
+*/
+
+function func1_1()
+{
+	return 3;
+}
+function func2_1()
+{
+	return 5;
+}
+console.log(func1_1() + func2_1());
+
+
+function sum2_1(arr)
+{
+	let res = 0;
+	for (let elem of arr)
+	{
+		res += elem;
+	}
+	return res;
+}
+console.log(sum2_1([1, 2, 3, 4, 5]));
+
+
+let arr3 = [1, 2, 3, 4, 5];
+
+function func3_1(arr)
+{
+	let res = 0;
+	for (let elem of arr)
+	{
+		res += elem;
+	}
+	console.log(res);
+}
+func3_1(arr3);
+
+
+function func1_4()
+{
+	return 3;
+}
+function func2_4()
+{
+	return 5;
+}
+console.log(func1_4() + func2_4());
+
+
+let res5 = sum5_1([1, 2, 3, 4, 5]);
+console.log(res5);
+
+function sum5_1(arr)
+{
+	let sum = 0;
+	for (let elem of arr)
+	{
+		sum += elem;
+	}
+	return sum;
+}
+
+
+let res6 = sum6_1([1, 2, 3, 4, 5]);
+console.log(res6);
+
+function sum6_1(arr)
+{
+	let sum = 0;
+	for (let elem of arr)
+	{
+		sum += elem;
+	}
+	return sum;
+}
+
+
+function add7_1(num)
+{
+	if (num <= 9)
+	{
+		return '0' + num;
+	}
+	return num;
+}
+
+
+let arr8 = [1, 2, 3, 4, 5];
+let res8 = sum8_1(arr8);
+console.log(res8);
+
+function sum8_1(arr)
+{
+	let res = 0;
+	for (let elem of arr)
+	{
+		res += elem;
+	}
+	return res;
+}
+
+let num9 = 12345;
+let res9 = getDigitsSum9_1(num9);
+console.log(res9);
+
+function getDigitsSum9_1(num)
+{
+	let arr = String(num).split('');
+	let sum = 0;
+	for (let elem of arr)
+	{
+		sum += +elem;
+	}
+	return sum;
+}
+
+
+console.log(isPrime10_1(13));
+
+function isPrime10_1(num)
+{
+	for (let i = 2; i < num; i++)
+	{
+		if (num % i === 0)
+		{
+			return false;
+		}
+	}
+	return true;
+}
+
+
+function getDivisors1(num)
+{
+	let res = [];
+	for (let i = 1; i <= num; i++)
+	{
+		if (num % i === 0)
+		{
+			res.push(i);
+		}
+	}
+	return res;
+}
+console.log(getDivisors1(12));
+
+
+function getCommonDivisors2(num1, num2)
+{
+	let res = [];
+	let min = Math.min(num1, num2);
+	for (let i = 1; i <= min; i++)
+	{
+		if (num1 % i === 0 && num2 % i === 0)
+		{
+			res.push(i);
+		}
+	}
+	return res;
+}
+console.log(getCommonDivisors2(12, 18));
+
+
+function sumDigits3(num)
+{
+	let str = String(num);
+	let sum = 0;
+	for (let digit of str)
+	{
+		sum += Number(digit);
+	}
+	return sum;
+}
+console.log(sumDigits3(12345));
+
+
+function getCurrentDay4()
+{
+	let days = ['Воскресенье','Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота',];
+	let today = new Date().getDay();
+	return days[today];
+}
+console.log(getCurrentDay4());
+
+
+function getDayFromDate5(date)
+{
+	let days = ['Воскресенье', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота'];
+	let d = new Date(date);
+	return days[d.getDay()];
+}
+console.log(getDayFromDate5('2023-10-25'));
+
+
+function secondsToDays6(sec)
+{
+	return Math.floor(sec / 86400);
+}
+console.log(secondsToDays6(172800));
+
+
+function isLeap7(year)
+{
+	if (year % 4 === 0 && year % 100 !== 0 || year % 400 === 0)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
+console.log(isLeap7(2024));
+
+
+function isPrime8(num)
+{
+	if (num <= 1)
+	{
+		return false;
+	}
+	for (let i = 2; i < num; i++)
+	{
+		if (num % i === 0)
+		{
+			return false;
+		}
+	}
+	return true;
+}
+console.log(isPrime8(13));
