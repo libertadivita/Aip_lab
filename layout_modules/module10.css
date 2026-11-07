@@ -1,0 +1,821 @@
+﻿/*
+#menu {
+    display: flex;
+}
+
+#menu a {
+    box-sizing: border-box;
+    margin-right: 10px;
+    padding: 10px 25px;
+    font: 16px Arial;
+    text-decoration: none;
+    color: white;
+    border: 1px solid #16A177;
+    background-color: #16A177;
+}
+
+#menu a:hover, #menu a.active {
+    color: #16A177;
+    background-color: white;
+}
+
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+#menu a {
+    margin-bottom: 10px;
+    padding: 15px 25px;
+    font: 16px Arial;
+    text-decoration: none;
+    color: white;
+    border: 1px solid #16A177;
+    background-color: #16A177;
+}
+
+#menu a:hover, #menu a.active {
+    color: #16A177;
+    background-color: white;
+}
+
+
+#menu {
+    display: flex;
+    background-color: #16A177;
+}
+#menu a {
+    padding: 15px 40px;
+    font: 16px Arial;
+    text-decoration: none;
+    color: white;
+}
+#menu a:hover, #menu a.active {
+    background-color: #16785C;
+}
+*/
+
+#task1 #wrapper {
+    width: 700px;
+    margin: 50px auto;
+    text-align: justify;
+    border: 1px solid black;
+}
+#task1 #menu {
+    display: flex;
+    margin-bottom: 20px;
+    background-color: #484848;
+}
+#task1 #menu a {
+    padding: 10px 25px;
+    text-decoration: none;
+    color: #fff;
+    font: bold 14px Arial;
+}
+#task1 #menu a:hover, #menu a.active {
+    color: #484848;
+    background-color: #fff;
+}
+#task1 h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+#task1 #content h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+#task1 p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+#task1 #content p {
+    padding: 0 10px;
+    margin-bottom: 5px;
+    font: 17px / 20px "Times New Roman";
+}
+#task1 #content a {
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+#task2 #wrapper {
+	width: 900px;
+	margin: 0 auto 50px;
+}
+
+#task2 #containter {
+	margin-bottom: 20px;
+	border-left: 1px ridge #FC9D00;
+	border-right: 1px ridge #FC9D00;
+	border-bottom: 1px ridge #FC9D00;
+}
+
+#task2 #menu {
+	display: flex;
+	background-color: #FC9D00;
+	margin-bottom: 20px;
+}
+
+#task2 #menu a {
+	padding: 15px 25px;
+	text-decoration: none;
+	color: #fff;
+	font: bold 15px Arial;
+}
+
+#task2 #menu a:hover, #task2 #menu a.active {
+	color: #FC9D00;
+	background-color: #fff;
+}
+
+#task2 #content h1, #task2 #content h2 {
+	text-align: center;
+	margin-bottom: 10px;
+	color: #9B6100;
+}
+
+#task2 #content h1 {
+	font: 30px "Times New Roman";
+}
+
+#task2 #content h2 {
+	font: 25px "Times New Roman";
+}
+
+#task2 #content p {
+	margin-bottom: 5px;
+	padding: 0 10px;
+	font: 17px/33px "Times New Roman";
+	text-align: justify;
+	text-indent: 50px;
+	color: #CC8000;
+}
+
+#task2 #content a {
+	color: #CC8000;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+#task2 #content a:hover {
+	color: black;
+	text-decoration: none;
+}
+
+#task2 #footer {
+	display: flex;
+	justify-content: center;
+	font: 13px Arial;
+}
+
+#task2 #footer a {
+	margin: 0 10px;
+	text-decoration: none;
+	color: #9B6100;
+	font: bold 13px Arial;
+}
+
+#task2 #footer a:hover, #task2 #footer a.active {
+	text-decoration: underline;
+	color: black;
+}
+
+
+#task3 #wrapper {
+	width: 700px;
+	margin: 0 auto;
+}
+
+#task3 #wrapper h1 {
+	font: 30px "Times New Roman";
+	text-align: center;
+}
+
+#task3 #wrapper a {
+	color: blue;
+	text-decoration: none;
+}
+
+#task3 #wrapper a:hover {
+	text-decoration: underline;
+}
+
+#task3 #wrapper div {
+	margin-bottom: 20px;
+	border: 1px solid #707070;
+	padding: 20px;
+}
+
+#task3 #wrapper p {
+	margin: 10px 0;
+	text-align: justify;
+}
+
+#task3 #wrapper p.more {
+	text-align: right;
+	padding-right: 20px;
+}
+
+
+#task4 * {
+	box-sizing: border-box;
+}
+
+#task4 {
+	font-family: Arial;
+}
+
+#task4 p, #task4 h1, #task4 h2, #task4 ul, #task4 ol {
+	margin: 0;
+	padding: 0;
+}
+
+#task4 .wrapper {
+	margin-bottom: 30px;
+}
+
+#task4 .center {
+	width: 840px;
+	padding: 10px;
+	margin: 0 auto;
+}
+
+#task4 .wrapper h2 {
+	margin-bottom: 10px;
+	text-align: center;
+	font-size: 27px;
+}
+
+#task4 .wrapper p, #task4 .wrapper li {
+	margin-bottom: 10px;
+	text-align: justify;
+	font-size: 16px;
+}
+
+#task4 .wrapper li {
+	list-style-position: inside;
+}
+
+#task4 #header {
+	background: #008040;
+	color: white;
+}
+
+#task4 #header h1 {
+	font-size: 35px;
+	margin-bottom: 7px;
+	text-align: center;
+}
+
+#task4 #header p {
+	font-size: 21px;
+	margin-bottom: 5px;
+	text-align: center;
+}
+
+#task4 #services {
+	background-color: white;
+}
+
+#task4 #contacts {
+	background-color: #C60304;
+	color: white;
+}
+
+#task4 #contacts p {
+	text-align: center;
+}
+
+#task4 #company {
+	background-color: white;
+}
+
+#task4 #footer {
+	padding-top: 100px;
+	background: #FF8040;
+	color: white;
+	text-align: center;
+	font-size: 13px;
+}
+
+
+#task5 * {
+	box-sizing: border-box;
+}
+
+#task5 #wrapper {
+	width: 1200px;
+	margin: 30px auto;
+	border: 1px solid black;
+}
+
+#task5 #header {
+	height: 250px;
+	padding: 20px;
+	border: 1px solid black;
+}
+
+#task5 #container {
+	display: flex;
+}
+
+#task5 #content {
+	width: 860px;
+	height: 900px;
+	padding: 20px;
+	border: 1px solid black;
+}
+
+#task5 #sidebar {
+	width: 300px;
+	margin-right: 40px;
+	padding: 20px;
+	border: 1px solid black;
+}
+
+#task5 #footer {
+	height: 100px;
+	padding: 20px;
+	border: 1px solid black;
+}
+
+
+#task6 * {
+	box-sizing: border-box;
+}
+
+#task6 #wrapper {
+	width: 1200px;
+	margin: 30px auto;
+	border: 1px solid black;
+}
+
+#task6 #header {
+	height: 250px;
+	padding: 20px;
+	border: 1px solid black;
+}
+
+#task6 #container {
+	display: flex;
+}
+
+#task6 #content {
+	width: 860px;
+	height: 900px;
+	padding: 20px;
+	border: 1px solid black;
+}
+
+#task6 #sidebar {
+	width: 300px;
+	margin-left: 40px;
+	padding: 20px;
+	border: 1px solid black;
+}
+
+#task6 #footer {
+	height: 100px;
+	padding: 20px;
+	border: 1px solid black;
+}
+
+
+#task7 * {
+	box-sizing: border-box;
+}
+
+#task7 #wrapper {
+	width: 1200px;
+	margin: 30px auto;
+	border: 1px solid black;
+}
+
+#task7 #header {
+	height: 250px;
+	padding: 20px;
+	border: 1px solid black;
+}
+
+#task7 #container {
+	display: flex;
+}
+
+#task7 #content {
+	width: 640px;
+	height: 700px;
+	padding: 20px;
+	border: 1px solid black;
+}
+
+#task7 #left {
+	width: 300px;
+	margin-right: 30px;
+	padding: 20px;
+	border: 1px solid black;
+}
+
+#task7 #right {
+	width: 300px;
+	margin-left: 30px;
+	padding: 20px;
+	border: 1px solid black;
+}
+
+#task7 #footer {
+	height: 100px;
+	padding: 20px;
+	border: 1px solid black;
+}
+
+
+#task8 * {
+	box-sizing: border-box;
+}
+
+#task8 #wrapper {
+	width: 1000px;
+	margin: 30px auto;
+	border: 1px solid black;
+}
+
+#task8 #header {
+	height: 250px;
+	padding: 20px;
+	border: 1px solid black;
+}
+
+#task8 #container {
+	display: flex;
+}
+
+#task8 #content {
+	width: 520px;
+	height: 700px;
+	padding: 20px;
+	border: 1px solid black;
+}
+
+#task8 #left {
+	width: 250px;
+	margin-right: 15px;
+	padding: 20px;
+	border: 1px solid black;
+}
+
+#task8 #right {
+	width: 200px;
+	margin-left: 15px;
+	padding: 20px;
+	border: 1px solid black;
+}
+
+#task8 #footer {
+	height: 100px;
+	padding: 20px;
+	border: 1px solid black;
+}
+
+
+#task9 * {
+	box-sizing: border-box;
+}
+
+#task9 #wrapper {
+	width: 1000px;
+	margin: 30px auto;
+	border: 1px solid black;
+}
+
+#task9 #header {
+	height: 250px;
+	padding: 20px;
+	border: 1px solid black;
+}
+
+#task9 #container {
+	display: flex;
+}
+
+#task9 #content {
+	width: 560px;
+	height: 700px;
+	padding: 20px;
+	border: 1px solid black;
+}
+
+#task9 #left {
+	width: 200px;
+	margin-left: 20px;
+	padding: 20px;
+	border: 1px solid black;
+}
+
+#task9 #right {
+	width: 200px;
+	margin-left: 20px;
+	padding: 20px;
+	border: 1px solid black;
+}
+
+#task9 #footer {
+	height: 100px;
+	padding: 20px;
+	border: 1px solid black;
+}
+
+
+
+#task13, #task13 p, #task13 h1, #task13 h2, #task13 ul {
+	margin: 0;
+	padding: 0;
+}
+
+#task13 {
+	background-color: #EBEBEB;
+	font-family: sans-serif;
+}
+
+#task13 .wrapper {
+	width: 890px;
+	margin: 0 auto;
+	display: flex;
+}
+
+#task13 header {
+	background-color: #F8AA03;
+}
+
+#task13 #menu {
+	min-height: 50px;
+	align-items: center;
+	display: flex;
+	margin-left: 20px;
+}
+
+#task13 #menu a:link, #task13 #menu a:visited {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+#task13 #menu a:hover, #task13 #menu a.active {
+	text-decoration: underline;
+}
+
+#task13 aside {
+	width: 360px;
+	background-color: #ffffff;
+	padding: 20px 20px 20px 10px;
+	box-sizing: border-box;
+}
+
+#task13 aside>div {
+	margin: 20px 20px 0 0;
+}
+
+#task13 aside h2 {
+	font-size: 17px;
+	margin-bottom: 10px;
+}
+
+#task13 aside p, #task13 aside li {
+	font-size: 16px;
+	text-align: justify;
+	margin-bottom: 10px;
+}
+
+#task13 aside ul {
+	list-style-type: none;
+}
+
+#task13 main {
+	text-align: justify;
+	width: 530px;
+	background-color: #ffffff;
+	padding: 20px 10px 20px 20px;
+	box-sizing: border-box;
+}
+
+#task13 main h1 {
+	font-size: 21px;
+}
+
+#task13 main h2 {
+	font-size: 19px;
+	margin-top: 20px;
+}
+
+#task13 main p {
+	margin: 10px 0;
+}
+
+#task13 main img {
+	width: 500px;
+	height: 350px;
+	background-size: contain;
+}
+
+#task13 footer {
+	color: #ffffff;
+	display: flex;
+	min-height: 75px;
+	align-items: center;
+	justify-content: center;
+	background-color: #F8AA03;
+}
+
+#task13 .price {
+	margin-top: 10px;
+	width: 500px;
+}
+
+#task13 .price td, #task13 .price th {
+	border: 1px solid #000000;
+	text-align: center;
+}
+
+#task13 .price th {
+	background-color: #EBEBEB;
+}
+
+#task13 .picture {
+	width: 490px;
+	height: 375px;
+}
+
+#task13 nav a {
+	margin-right: 20px;
+	font-size: 18px;
+}
+
+
+
+
+#task14, #task14 p, #task14 h1, #task14 h2, #task14 ul {
+	margin: 0;
+	padding: 0;
+}
+
+#task14 {
+	background-color: #EBEBEB;
+	font-family: sans-serif;
+}
+
+#task14 .wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #ffffff;
+	width: 1100px;
+	margin: 0 auto;
+}
+
+#task14 .footer-center {
+	width: 1100px;
+	margin: 0 auto;
+}
+
+#task14 header, #task14 footer {
+	background-color: #242424;
+}
+
+#task14 nav {
+	min-height: 50px;
+	display: flex;
+	align-items: center;
+	width: 1100px;
+	margin: 0 auto;
+}
+
+#task14 nav a {
+	display: block;
+	padding: 0 20px;
+	font-size: 19px;
+	box-sizing: border-box;
+}
+
+#task14 nav a:link, #task14 nav a:visited {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+#task14 nav a:hover, #task14 nav a.active {
+	background-color: #585858;
+	line-height: 50px;
+}
+
+#task14 aside {
+	width: 300px;
+	display: flex;
+	flex-direction: column;
+	padding: 20px 20px 0 20px;
+	box-sizing: border-box;
+}
+
+#task14 aside h2 {
+	font-size: 17px;
+	margin-bottom: 10px;
+}
+
+#task14 aside p, #task14 aside li {
+	font-size: 13px;
+	text-align: justify;
+	margin: 0 0 10px 0;
+}
+
+#task14 aside ul {
+	list-style-type: none;
+}
+
+#task14 main {
+	min-height: 600px;
+	padding: 20px 0;
+	text-align: justify;
+	width: 495px;
+	box-sizing: border-box;
+}
+
+#task14 main h1 {
+	font-size: 21px;
+}
+
+#task14 main h2 {
+	font-size: 19px;
+	margin: 20px 0;
+}
+
+#task14 main p {
+	font-size: 13px;
+	margin: 10px 0;
+}
+
+#task14 main img {
+	width: 495px;
+	height: 375px;
+}
+
+#task14 footer {
+	display: flex;
+	flex-direction: column;
+	font-size: 13px;
+	text-align: center;
+	color: #ffffff;
+	min-height: 281px;
+}
+
+#task14 .footer-center {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-top: 30px;
+	box-sizing: border-box;
+}
+
+#task14 .copyright {
+	min-height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#task14 aside img {
+	height: 168px;
+	width: 270px;
+	display: inline-block;
+	margin: 10px 0;
+}
+
+#task14 .footer-wrp {
+	width: 250px;
+	background-color: #EBEBEB;
+	color: #000000;
+	min-height: 200px;
+	display: flex;
+	flex-direction: column;
+}
+
+#task14 .footer-wrp hr {
+	width: 248px;
+}
+
+#task14 .footer-wrp h2 {
+	margin: 15px 0 10px 0;
+}
+
+#task14 .footer-center p {
+	font-size: 12px;
+}
