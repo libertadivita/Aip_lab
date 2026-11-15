@@ -2974,6 +2974,7 @@ console.log(students);
 // Модуль 7
 
 
+
 let res1 = 2 ** 10;
 console.log(res1); 
 
@@ -3162,7 +3163,10 @@ for (let digit of arr5)
 console.log(prod5);
 
 
+
 //Модуль 8 
+
+
 
 function name()
 {
@@ -3408,7 +3412,7 @@ function getProduct(arr) // переименование
 	}
 	return res;
 }
-*/
+
 
 function func1_1()
 {
@@ -3640,3 +3644,132 @@ function isPrime8(num)
 	return true;
 }
 console.log(isPrime8(13));
+*/ 
+
+
+// Модуль 9 - Теоретические вопросы по глобальным и локальным переменным (переменные функции)
+
+
+
+// Модуль 10
+
+
+/**/ 
+function func1_1() {
+	return '!';
+}
+console.log(func1_1); 
+
+
+function func2_1()
+{
+	return 'текст';
+}
+console.log(func2_1());
+console.log(func2_1);
+func2_1 = 123;
+console.log(func2_1);
+
+
+function func3_1()
+{
+	return 3;
+}
+let func3_2 = func3_1;
+console.log(func3_1() + func3_2());
+
+
+let func4_1 = function()
+{
+	return 1;
+};
+let func4_2 = function()
+{
+	return 2;
+};
+console.log(func4_1() + func4_2());
+
+
+func7_1();
+function func7_1()
+{
+	console.log('Работает!');
+}
+
+let func7_2 = function()
+{
+	console.log('Работает!');
+};
+func7_2();
+
+
+let func8_1 = function() {console.log('!')};
+let func8_2 = function()
+{
+	console.log('!')
+};
+function func8_3()
+{
+	console.log('!')
+}
+
+
+let arr15 = [
+	function() {return 1},
+	function() {return 2},
+	function() {return 3}
+];
+console.log(arr15[2]());
+let sum15 = arr15[0]() + arr15[1]() + arr15[2]();
+console.log(sum15);
+for (let func of arr15)
+{
+	console.log(func());
+}
+
+
+let obj16 = {
+	func1: function() {return 1},
+	func2: function() {return 2},
+	func3: function() {return 3}
+};
+console.log(obj16.func1() + obj16.func2() + obj16.func3());
+for (let key in obj16)
+{
+	console.log(obj16[key]());
+}
+
+
+let math17 = {
+	sum: function(arr)
+	{
+		let res = 0;
+		for (let elem of arr)
+		{
+			res += elem;
+		}
+		return res;
+	},
+	sumSquares: function(arr)
+	{
+		let res = 0;
+		for (let elem of arr)
+		{
+			res += elem ** 2;
+		}
+		return res;
+	},
+	sumCubes: function(arr)
+	{
+		let res = 0;
+		for (let elem of arr)
+		{
+			res += elem ** 3;
+		}
+		return res;
+	}
+};
+let arr17 = [1, 2, 3];
+console.log(math17.sum(arr17));
+console.log(math17.sumSquares(arr17));
+console.log(math17.sumCubes(arr17));
