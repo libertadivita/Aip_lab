@@ -3654,7 +3654,7 @@ console.log(isPrime8(13));
 // Модуль 10
 
 
-/**/ 
+/* 
 function func1_1() {
 	return '!';
 }
@@ -3773,3 +3773,177 @@ let arr17 = [1, 2, 3];
 console.log(math17.sum(arr17));
 console.log(math17.sumSquares(arr17));
 console.log(math17.sumCubes(arr17));
+*/
+
+
+
+// Модуль 11
+
+
+
+function test1_1(func1, func2, func3)
+{
+	console.log(func1() + func2() + func3());
+}
+test1_1(
+	function() {return 1},
+	function() {return 2},
+	function() {return 3}
+);
+
+
+function test2_1(func1, func2, func3)
+{
+	return func1() + func2() + func3();
+}
+let func2_1 = function() { return 1; };
+let func2_2 = function() { return 2; };
+let func2_3 = function() { return 3; };
+console.log(test2_1(func2_1, func2_2, func2_3));
+
+
+function test3_1(func)
+{
+	console.log(func(3));
+}
+test3_1(function(num) { return num ** 3; });
+
+function func3_2(num) { return num ** 3; }
+test3_1(func3_2);
+
+let func3_3 = function(num) { return num ** 3; };
+test3_1(func3_3);
+
+function test3_4(func)
+{
+	console.log(func(2, 3));
+}
+test3_4(function(num1, num2) { return num1 + num2; });
+
+
+function test4_1(num, func1, func2)
+{
+	return func1(num) + func2(num);
+}
+console.log(test4_1(3,
+	function(num) { return num ** 2; },
+	function(num) { return num ** 3; }
+));
+
+
+function test5_1(arr, func) {
+	for (let i = 0; i < arr.length; i++) {
+		arr[i] = func(arr[i]);
+	}
+	return arr;
+}
+
+let result5 = test5_1([1, 2, 3, 4, 5], function(num) {
+	return num * num * num;
+});
+console.log(result5);
+
+
+function func6_1(num1, num2)
+{
+	function square(num) { return num ** 2; }
+	function cube(num) { return num ** 3; }
+	return square(num1) + cube(num2);
+}
+console.log(func6_1(2, 3));
+
+
+function func1_11() { return function() { return 1; }; }
+function func2_11() { return function() { return 2; }; }
+console.log(func1_11()() + func2_11()());
+
+
+function func12_1()
+{
+	return function() {
+		return function() {
+			return function() {
+				return function() {
+					return '!';
+				};
+			};
+		};
+	};
+}
+console.log(func12_1()()()()());
+
+
+function func13_1(num1)
+{
+	return function(num2) {
+		return function(num3) {
+			return num1 + num2 + num3;
+		};
+	};
+}
+console.log(func13_1(2)(3)(4));
+
+
+function func13_2(num1)
+{
+	return function(num2) {
+		return function(num3) {
+			return function(num4) {
+				return function() {
+					return [num1, num2, num3, num4];
+				};
+			};
+		};
+	};
+}
+console.log(func13_2(2)(3)(4)(5)());
+
+
+function each14_1(arr, callback)
+{
+	let res = [];
+	for (let elem of arr)
+	{
+		res.push(callback(elem));
+	}
+	return res;
+}
+
+let arr14_2 = [1, 2, 3, 4, 5];
+let res14_2 = each14_1(arr14_2, function(elem) {
+	return elem * 2;
+});
+console.log(res14_2);
+
+let arr14_3 = ['abc', 'def', 'ghi'];
+let res14_3 = each14_1(arr14_3, function(elem) {
+	return elem.split('').reverse().join('');
+});
+console.log(res14_3);
+
+let arr14_4 = ['abc', 'def', 'ghi'];
+let res14_4 = each14_1(arr14_4, function(elem) {
+	return elem[0].toUpperCase() + elem.slice(1);
+});
+console.log(res14_4);
+
+
+function cube15_1(num) {return num ** 3;}
+let result15 = each14_1([1, 2, 3, 4, 5], cube15_1);
+console.log(result15); 
+
+
+function filter17_1(arr, callback)
+{
+	let res = [];
+	for (let elem of arr)
+	{
+		if (callback(elem) === true)
+		{
+			res.push(elem);
+		}
+	}
+	return res;
+}
+let result17_1 = filter17_1([1, 2, 3, 4, 5], elem => elem > 0);
+console.log(result17_1);
