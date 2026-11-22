@@ -35,7 +35,6 @@ function task5_2()
 }
 let counter5_2 = task5_2();
 counter5_2();
-*/
 
 
 // Модуль 13 
@@ -109,3 +108,131 @@ counter9_2();
 counter9_2();
 counter9_2();
 counter9_2();
+*/
+
+
+// Модуль 14 
+
+
+
+function func2_1(arr)
+{
+	console.log(arr.shift());
+	if (arr.length !== 0)
+	{
+		func2_1(arr);
+	}
+}
+let arr2_1 = [1, 2, 3, 4, 5];
+func2_1(arr2_1);
+
+
+function func3_1(arr)
+{
+	let sum = arr.shift() ** 2;
+	if (arr.length !== 0)
+	{
+		sum += func3_1(arr);
+	}
+	return sum;
+}
+let arr3_1 = [1, 2, 3, 4, 5];
+console.log(func3_1(arr3_1));
+
+
+function func4_1(obj)
+{
+	for (let key in obj)
+	{
+		if (typeof obj[key] == 'object')
+		{
+			func4_1(obj[key]);
+		}
+		else
+		{
+			console.log(obj[key]);
+		}
+	}
+}
+let obj4_1 = {a: 1, b: {c: 2, d: 3, e: 4}, f: {g: 5, j: 6, k: {l: 7, m: {n: 8, o: 9}}}};
+func4_1(obj4_1);
+
+
+function func4_2(arr)
+{
+	let res = [];
+	for (let elem of arr)
+	{
+		if (Array.isArray(elem))
+		{
+			res = res.concat(func4_2(elem));
+		}
+		else
+		{
+			res.push(elem);
+		}
+	}
+	return res;
+}
+let arr4_2 = [1, [2, 7, 8], [3, 4, [5, [6, 7]]]];
+console.log(func4_2(arr4_2));
+
+
+function func5_1(obj)
+{
+	let sum = 0;
+	for (let key in obj)
+	{
+		if (typeof obj[key] == 'object')
+		{
+			sum += func5_1(obj[key]);
+		}
+		else
+		{
+			sum += obj[key];
+		}
+	}
+	return sum;
+}
+let obj5_1 = {a: 1, b: {c: 2, d: 3, e: 4}, f: {g: 5, j: 6, k: {l: 7, m: {n: 8, o: 9}}}};
+console.log(func5_1(obj5_1));
+
+
+function func5_2(arr)
+{
+	let str = '';
+	for (let elem of arr)
+	{
+		if (Array.isArray(elem))
+		{
+			str += func5_2(elem);
+		}
+		else
+		{
+			str += elem;
+		}
+	}
+	return str;
+}
+let arr5_2 = ['a', ['b', 'c', 'd'], ['e', 'f', ['g', ['j', 'k']]]];
+console.log(func5_2(arr5_2));
+
+
+function func6_1(arr)
+{
+	for (let i = 0; i < arr.length; i++)
+	{
+		if (Array.isArray(arr[i]))
+		{
+			arr[i] = func6_1(arr[i]);
+		}
+		else
+		{
+			arr[i] = arr[i] ** 2;
+		}
+	}
+	return arr;
+}
+
+let arr6_1 = [1, [2, 7, 8], [3, 4], [5, [6, 7]]];
+console.log(func6_1(arr6_1));
