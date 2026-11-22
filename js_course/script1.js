@@ -3773,7 +3773,7 @@ let arr17 = [1, 2, 3];
 console.log(math17.sum(arr17));
 console.log(math17.sumSquares(arr17));
 console.log(math17.sumCubes(arr17));
-*/
+
 
 
 
@@ -3947,3 +3947,4 @@ function filter17_1(arr, callback)
 }
 let result17_1 = filter17_1([1, 2, 3, 4, 5], elem => elem > 0);
 console.log(result17_1);
+*/
