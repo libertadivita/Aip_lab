@@ -108,7 +108,7 @@ counter9_2();
 counter9_2();
 counter9_2();
 counter9_2();
-*/
+
 
 
 // Модуль 14 
@@ -236,3 +236,113 @@ function func6_1(arr)
 
 let arr6_1 = [1, [2, 7, 8], [3, 4], [5, [6, 7]]];
 console.log(func6_1(arr6_1));
+*/
+
+
+
+// Модуль 15
+
+
+
+let arr1_1 = [4, 9, 16];
+let res1_1 = arr1_1.map(function(elem) {return Math.sqrt(elem);});
+console.log(res1_1);
+
+let arr1_2 = ['a', 'b', 'c'];
+let res1_2 = arr1_2.map(function(elem) {return elem + '!';});
+console.log(res1_2);
+
+let arr1_3 = ['abc', 'def'];
+let res1_3 = arr1_3.map(function(elem) {return elem.split('').reverse().join('');});
+console.log(res1_3);
+
+let arr1_4 = ['123', '456', '789'];
+let res1_4 = arr1_4.map(function(elem) {
+	return elem.split('').map(Number);
+});
+console.log(res1_4);
+
+let arr1_5 = [1, 2, 3, 4];
+let res1_5 = arr1_5.map(function(elem, index) {return elem * index;});
+console.log(res1_5);
+
+
+let arr2_1 = [1, 2, 3, 4, 5];
+let sum2_1 = 0;
+arr2_1.forEach(function(elem) {
+	sum2_1 += elem ** 2;
+});
+console.log(sum2_1);
+
+
+let arr3_1 = [-2, 1, -5, 10];
+let res3_1 = arr3_1.filter(function(elem)
+{
+	return elem > 0;
+});
+console.log(res3_1);
+
+let arr3_2 = [-2, 1, -5, 10];
+let res3_2 = arr3_2.filter(function(elem)
+{
+	return elem < 0;
+});
+console.log(res3_2);
+
+let arr3_3 = [-2, 1, -5, 10, 5];
+let res3_3 = arr3_3.filter(function(elem)
+{
+	return elem > 0 && elem < 10;
+});
+console.log(res3_3);
+
+let arr3_4 = ['apple', 'cat', 'banana', 'dog'];
+let res3_4 = arr3_4.filter(function(elem)
+{
+	return elem.length > 5;
+});
+console.log(res3_4);
+
+let arr3_5 = [10, 2, 5, 15];
+let res3_5 = arr3_5.filter(function(elem, index)
+{
+	return elem * index < 30;
+});
+console.log(res3_5);
+
+let arr3_6 = [1, 2, [3, 4], 5, [6, 7]];
+let res3_6 = arr3_6.filter(function(elem)
+{
+	return !Array.isArray(elem);
+});
+console.log(res3_6);
+
+
+let arr4_1 = [2, 5, 8];
+let res4_1 = arr4_1.every(function(elem)
+{
+	return elem > 0;
+});
+console.log(res4_1);
+
+let arr4_2 = [10, 2, 5];
+let res4_2 = arr4_2.every(function(elem, index)
+{
+	return elem * index < 30;
+});
+console.log(res4_2);
+
+
+let arr5_1 = [-5, -2, 0, 3];
+let res5_1 = arr5_1.some(function(elem)
+{
+	return elem > 0;
+});
+console.log(res5_1);
+
+let arr5_2 = [1, 2, 4];
+let res5_2 = arr5_2.some(function(elem, index)
+{
+	return elem * index > 30;
+});
+console.log(res5_2);
